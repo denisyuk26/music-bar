@@ -1,0 +1,16 @@
+$font-normal: 'Open Sans', sans-serif;
+$font-light: 'Open Sans Light', sans-serif;
+$font-size-default: 14px;
+$font-size-headers: 20px;
+$icon-size: 24px;
+$gray: #d9d9d9;
+$hover-text: #bc243c;
+$text-color: #4d4d4d;
+$border-color: rgba(70,70,70,1);
+$prime-color: linear-gradient(to bottom, rgba(188,36,60,0.59) 1%,rgba(255,26,0,0.6) 5%,rgba(181,27,29,0.66) 31%,rgba(188,36,60,0.75) 68%,rgba(188,36,60,0.81) 94%,rgba(188,36,60,0.82) 100%);
+@mixin gradient {
+  background: $prime-color;
+}
+///end colors and bg colors;
+
+

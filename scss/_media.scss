@@ -1,0 +1,218 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .search-block form {
+    text-align: left;
+  }
+  .album-section {
+    width: 27vw;
+    &:hover {
+      width: 27vw;
+    }
+  }
+  .search {
+    width: 40%;
+    font-size: $font-size-default - 2;
+    margin: {
+      right: 0;
+    }
+  ;
+
+  }
+}
+
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+}
+
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .mobile-hide {
+    display: none;
+  }
+  .volume-block .volume {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    bottom: 1px;
+    padding-bottom: 0px;
+  }
+  .animation-block {
+    margin: 0;
+  }
+  .mobile-nav {
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .mob-playlist, .mobile-player-line {
+    width: 90vw;
+  }
+  .info-block {
+    display: none;
+  }
+  .player {
+    margin-right: 15px;
+  }
+  .track-name {
+    font-size: 11px;
+  }
+  .search-block form {
+    text-align: left;
+  }
+  .search {
+    width: 40%;
+    font-size: $font-size-default - 2;
+    margin: {
+      right: 0;
+    }
+  ;
+
+  }
+  .album-section {
+    width: 40vw;
+    &:hover {
+      width: 40vw;
+    }
+  }
+  .mobile-adapt {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    .animation-block {
+      width: 47%;
+    }
+
+  }
+  #playlist-mob {
+    position: absolute;
+    //height: 0;
+    z-index: 55;
+    max-height: 90vh;
+
+    &:hover {
+      .toggle-playlist > #playlist-mob {
+        height: 75vh;
+      }
+
+    }
+  }
+}
+
+/**/
+
+@media only screen and (max-width: 640px) {
+  .track-section {
+    width: 100%;
+  }
+
+  .button, .input {
+    font-size: $font-size-default;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+  #player-block {
+    box-shadow: none;
+  }
+  #playlist-mob {
+    margin: 0;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .album-section {
+    width: 80vw;
+    &:hover {
+      width: 80vw;
+    }
+  }
+  .animation {
+    h1 {
+      margin: 0 0 0 80px;
+    }
+  }
+  #playlist-mob {
+    position: absolute;
+    max-width: 90vw;
+    width: 100%;
+    max-height: 90vh;
+    &:hover {
+      height: 90vh;
+    }
+  }
+  .toggle-playlist:hover.toggle-playlist>#playlist-mob {
+    height: 85vh;
+    background: #ffffff;
+    margin-top: 25px;
+  }
+  .button, .input {
+    font-size:$font-size-default - 2;
+  }
+  .input {
+    width: 55px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+}
+
+/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 440px) {
+
+}
+
+/**/
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+
+}
+
+/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+}
+
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+
+}
+
+/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/**/
+

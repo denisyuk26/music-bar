@@ -1,0 +1,137 @@
+* {
+	box-sizing: border-box;
+	&:before, &:after{
+		box-sizing: border-box;
+	}
+	font-family:sans-serif;
+}
+
+ul, ol, li {
+	-webkit-padding-start: 0;
+}
+
+
+html, body {
+	height: 100%;
+}
+
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: raleway-example, sans-serif;
+	overflow-x: hidden;
+	opacity: 1;
+}
+
+// flexbox grid //
+.col-1{
+	flex: 1;
+}
+.col-2{
+	flex: 2;
+}
+.col-3 {
+	flex: 3;
+}
+.col-4 {
+	flex: 4;
+}
+.col-5 {
+	flex: 5;
+}
+.col-6 {
+	flex: 6;
+}
+.col-8 {
+	flex: 8;
+}
+.col-9 {
+	flex: 9;
+}
+.col-10 {
+	flex: 10;
+}
+.col-11 {
+	flex: 11;
+}
+.col-12 {
+	flex: 12;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.center {
+	justify-content: center;
+	align-items: center;
+}
+.row {
+	 flex-direction: row;
+ }
+.row-reverse {
+	flex-direction: row-reverse;
+}
+.column {
+	flex-direction: column;
+}
+.column-reverse {
+	flex-direction: column-reverse;
+}
+
+.flex-container {
+	display: flex;
+}
+// flexbox grid //
+
+.container {
+	max-width: 1200px;
+	display: block;
+	margin: 0 auto;
+}
+.container-head {
+  max-width: 1400px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+.my-container {
+	max-width: 1200px;
+	display: block;
+	margin: 0 auto;
+}
+.clear {
+	clear:both;
+}
+
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+.op0 {
+	opacity: 0;
+}
+.op1 {
+	opacity: 1;
+}
+
+input {
+	outline: none;
+}
