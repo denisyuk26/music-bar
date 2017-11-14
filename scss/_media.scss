@@ -108,6 +108,14 @@
 
     }
   }
+  #main > .music-list {
+    overflow: auto;
+    overflow-y: hidden;
+    max-height: inherit;
+    height: auto;
+    box-shadow: none;
+
+  }
 }
 
 /**/
