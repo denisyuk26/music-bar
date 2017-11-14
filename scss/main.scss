@@ -632,12 +632,12 @@ input[type=range] {
   flex-direction: column;
   flex-wrap: nowrap;
   margin: 5px;
-  width: 13vw;
+  width: 27vw;
   border-radius: 40px;
   box-shadow: 1px 2px 3px -2px rgba(90, 90, 90, 0.3);
   &:hover {
     cursor:pointer;
-    width: 15vw;
+    width: 27vw;
     height:auto;
     box-shadow: 1px 2px 3px 0 rgba(90,90,90,0.3);
     .hide {
