@@ -116,8 +116,7 @@
   width: 100%;
   opacity: 0;
   top: 26%;
-
-  transform: translate(50%);
+  left: 0;
   position: absolute;
   text-align: center;
   color: $hover-text;
@@ -127,7 +126,7 @@
 @keyframes hideload {
   0% {
     opacity: 1;
-    display: block;
+
   }
 
   50% {
@@ -136,7 +135,6 @@
 
   100% {
     opacity: 0;
-    display: none;
   }
 
 }
