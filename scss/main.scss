@@ -555,7 +555,7 @@ input[type=range] {
     bottom: 1px solid $gray;
     radius: 0;
   };
-  background-color: rgba(255,255,255,.7);
+  background-color: transparent;
   position: relative;
   &:hover {
     border-color: $hover-text;
@@ -563,6 +563,9 @@ input[type=range] {
   &:focus {
     border-color: $hover-text;
     width: 50%;
+  }
+  &[placeholder] {
+    color: #fff;
   }
 }
 #find-desktop, #find-mob {
@@ -582,11 +585,9 @@ input[type=range] {
   }
   &:hover {
     color: darken(#d4d4d4, 50%);
-    border-color:$hover-text;
   }
-  &:active {
+  &:active, &:focus {
     color: $hover-text;
-    border-color:$hover-text;
   }
 }
 // end search
