@@ -5,7 +5,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .search-block form {
-    text-align: right;
+    text-align: center;
   }
   .album-section {
     width: 27vw;
@@ -35,6 +35,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .search-block form {
+    text-align: right;
+  }
   .toggle-playlist:hover.toggle-playlist>#playlist-mob {
     height: 85vh;
     background: #ffffff;
@@ -135,9 +138,6 @@
     font-size: $font-size-default - 2;
     margin-bottom: 40px;
     z-index: -1;
-  }
-  .search-block form {
-    text-align: left;
   }
   .search {
     width: 40%;
