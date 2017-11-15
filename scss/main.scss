@@ -121,8 +121,7 @@
   position: absolute;
   text-align: center;
   color: $hover-text;
-  animation: vibro 1.7s 1 ease-in,
-              rotate 1s 1 ease .5s,
+  animation: rotate 1s 1 ease .5s,
              hideload 1.7s 1 ease-out;
 }
 @keyframes hideload {
