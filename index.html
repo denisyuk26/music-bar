@@ -138,13 +138,14 @@
                 <div class="player player-controls mob-controls flex-container col-2">
                     <button class="audio_button previous"><i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
-                    <button class="audio_button next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
                     <div class="playpause audio_button">
                         <input type="checkbox" value="None" id="playpause-top" name="check"/>
                         <label for="playpause-top" tabindex=1>
                         </label>
                     </div>
-                    <button class="audio_button stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
+                    <button class="audio_button next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+
+                    <!--<button class="audio_button stop"><i class="fa fa-stop" aria-hidden="true"></i></button>-->
 
                 </div>
                 <div class="player player-range-section col-4">
@@ -299,7 +300,7 @@
                             <label for="playpause" tabindex=1>
                             </label>
                         </div>
-                        <button class="audio_button stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
+                        <!--<button class="audio_button stop"><i class="fa fa-stop" aria-hidden="true"></i></button>-->
                         <button class="audio_button next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
 
                     </div>
@@ -307,8 +308,8 @@
                         <label>
                             <p class='track-name'>Artist - Track Name <span class="track-time">(2:34)</span></p>
                         </label>
-                        <input type="range" class="range">
                         <div class="volume-block">
+                            <input type="range" class="range">
                             <input type="range" class=volume max='100'>
                         </div>
                     </div>
