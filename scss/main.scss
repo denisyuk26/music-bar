@@ -326,7 +326,7 @@ header {
 //------***--------------------
 //end styling playlist
 // start of block with audio player
-#player-block {
+#player-block-desktop {
   // border-radius: 20px;
   background: #fff;
   justify-content: center;
@@ -554,7 +554,7 @@ input[type=range] {
     width: 50%;
   }
 }
-#find {
+#find-desktop, #find-mob {
   border: none;
   outline: none;
   font-size: $icon-size;

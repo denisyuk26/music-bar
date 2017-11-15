@@ -19,7 +19,7 @@
             <h1 class="welcome">Welcome to Music-Bar</h1>
         </div>
         <div class="line2 mobile-hide">
-            <!--      playlist-->
+            <!--      playlist mob-->
             <div class="playlist-wrap col-2">
                 <div class='toggle-playlist open-playlist hide-playlist'>
                     <div class="animation-block">
@@ -133,15 +133,15 @@
                 </div>
             </div>
             <!--      end playlist-->
-            <!--  start player block    -->
-            <section id="player-block" class='flex-container col-5'>
-                <div class="player player-controls flex-container col-2">
+            <!--  start player block mob    -->
+            <section id="player-block-desktop" class='flex-container col-5'>
+                <div class="player player-controls mob-controls flex-container col-2">
                     <button class="audio_button previous"><i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
                     <button class="audio_button next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
                     <div class="playpause audio_button">
-                        <input type="checkbox" value="None" id="playpause" name="check"/>
-                        <label for="playpause" tabindex=1>
+                        <input type="checkbox" value="None" id="playpause-top" name="check"/>
+                        <label for="playpause-top" tabindex=1>
                         </label>
                     </div>
                     <button class="audio_button stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
@@ -158,45 +158,17 @@
                 </div>
             </section>
             <!--  end player block    -->
-            <!--      search-->
+            <!--      search mob-->
             <div class="search-block col-2">
                 <form action="">
                     <input type="text" class="search input" placeholder="Search">
-                    <button id="find"><i class="fa fa-search" disable aria-hidden="true"></i></button>
+                    <button id="find-desktop"><i class="fa fa-search" disable aria-hidden="true"></i></button>
                 </form>
 
             </div>
             <!--    end search-->
         </div>
         <div class="mobile-nav flex-container row mob-show">
-            <div class="mobile-player-line">
-                <section id="player-block" class='flex-container col-5'>
-                    <div class="player player-controls flex-container col-2">
-                        <button class="audio_button previous"><i class="fa fa-step-backward" aria-hidden="true"></i>
-                        </button>
-                        <button class="audio_button next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
-                        <div class="playpause audio_button">
-                            <input type="checkbox" value="None" id="playpause" name="check"/>
-                            <label for="playpause" tabindex=1>
-                            </label>
-                        </div>
-                        <button class="audio_button stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
-
-                    </div>
-                    <div class="player player-range-section col-4">
-                        <label>
-                            <p class='track-name'>Artist - Track Name <span class="track-time">(2:34)</span></p>
-                        </label>
-                        <input type="range" class="range">
-                    </div>
-                    <div class="volume-block">
-                        <input type="range" class=volume max='100'>
-                    </div>
-                </section>
-                <!--  end player block    -->
-                <!--      search-->
-
-            </div>
             <div class="mob-playlist flex-container">
                 <div class="playlist-wrap col-2">
                     <div class='toggle-playlist open-playlist hide-playlist'>
@@ -311,11 +283,41 @@
                 <div class="search-block col-2">
                     <form action="">
                         <input type="text" class="search input" placeholder="Search">
-                        <button id="find"><i class="fa fa-search" disable aria-hidden="true"></i></button>
+                        <button id="find-mob"><i class="fa fa-search" disable aria-hidden="true"></i></button>
                     </form>
 
                 </div>
             </div>
+            <div class="mobile-player-line">
+                <section id="player-block-mobile" class='flex-container column col-5'>
+                    <div class="player player-controls flex-container col-2">
+                        <button class="audio_button previous"><i class="fa fa-step-backward" aria-hidden="true"></i>
+                        </button>
+                        <button class="audio_button next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+                        <div class="playpause audio_button">
+                            <input type="checkbox" value="None" id="playpause" name="check"/>
+                            <label for="playpause" tabindex=1>
+                            </label>
+                        </div>
+                        <button class="audio_button stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
+
+                    </div>
+                    <div class="player player-range-section col-4">
+                        <label>
+                            <p class='track-name'>Artist - Track Name <span class="track-time">(2:34)</span></p>
+                        </label>
+                        <input type="range" class="range">
+                        <div class="volume-block">
+                            <input type="range" class=volume max='100'>
+                        </div>
+                    </div>
+
+                </section>
+                <!--  end player block    -->
+                <!--      search-->
+
+            </div>
+
 
 
         </div>
@@ -429,7 +431,7 @@
                                     </p>
                                 </div>
                                 <div class="playpause playpause-album audio_button">
-                                    <input type="checkbox" value="None" id="" name="check"/>
+                                    <input type="checkbox" value="None" name="check"/>
                                     <label for="playpause" tabindex=1>
                                     </label>
                                 </div>
