@@ -115,6 +115,7 @@
 header {
   width: 100%;
   position: relative;
+
   margin: {
     bottom: 70px;
   };
@@ -122,6 +123,8 @@ header {
     width: 100%;
     justify-content: center;
     align-items: center;
+    background: $prime-color;
+
 
     h1 {
       font-size:$font-size-headers - 5;
@@ -133,10 +136,15 @@ header {
     }
   }
   .line2 {
+    background: $prime-color;
     position: fixed;
     max-width: 1400px;
     width: 100%;
     z-index: 55;
+    padding: 1px 0 0 0;
+    top: 0;
+    border-radius: 30px;
+    box-shadow: 1px 2px 1px 1px rgba(190,190,190,0.3);
 
   }
 
@@ -205,6 +213,7 @@ header {
   max-height: 70vh;
   text-indent: 15px;
   margin: auto;
+  background: #ffffff;
   transition: all .2s ease;
   &:hover{
     cursor:pointer;

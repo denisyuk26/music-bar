@@ -37,13 +37,14 @@
 @media only screen and (max-width: 768px) {
   .search-block form {
     text-align: right;
+    position: relative;
   }
   .toggle-playlist:hover.toggle-playlist>#playlist-mob {
     height: 85vh;
     background: #ffffff;
     margin-top: 10px;
     max-width: 100vw;
-    margin-left: -25px;
+    margin-left: -27px;
   }
   .player-controls {
     .playpause {
@@ -96,7 +97,7 @@
       position: absolute;
       bottom: -15px;
       top: 5vh;
-      margin-top: 21px;
+      margin-top: 14px;
       margin-bottom: 15px;
       padding: 10px 0;
       //transform: rotate(90deg);
@@ -141,12 +142,25 @@
   }
   .search {
     width: 40%;
+    z-index: 9999;
     font-size: $font-size-default - 2;
     margin: {
       right: 0;
+      top: 10px;
+    };
+    opacity: 0;
+    &:active, &:focus {
+      opacity: 1;
     }
-  ;
 
+  }
+  #find-mob {
+    position: absolute;
+    top: 0px;
+    right: 14px;
+    i {
+      font-size: 36px;
+    }
   }
   .album-section {
     width: 40vw;
@@ -199,7 +213,7 @@
   .toggle-playlist:hover.toggle-playlist>#playlist-mob {
     height: 85vh;
 
-    margin-left: 5px;
+    margin-left: 0;
   }
 
   .animation-block {
@@ -213,6 +227,9 @@
     form {
       margin-right: 50px;
     }
+  }
+  .search:focus {
+    width:100%;
   }
   .playlist-wrap {
     width: 50%;
