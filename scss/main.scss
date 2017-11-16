@@ -899,6 +899,12 @@ input[name="show-ml"] {
         transform: rotate(270deg);
       }
     }
+    +.tracklist {
+      display: inherit;
+      &>.tracklist-section-block {
+        display: block;
+      }
+    }
   }
   &:not(checked){
     +.hide {
@@ -908,6 +914,13 @@ input[name="show-ml"] {
     +.arrow {
       transform: rotate(360deg);
     }
+    +.tracklist-section-block {
+      &>.track-section {
+        display: block;
+      }
+
+    }
+
   }
 }
 .album {

@@ -92,7 +92,7 @@
     align-items: center;
     label {
       position: absolute;
-      z-index: -1;
+      z-index: 0;
     }
   }
   .player-controls {
@@ -158,7 +158,7 @@
     box-shadow: 0 -1px 6px -1px lighten($border-color, 30%);
   }
   .mob-playlist, .mobile-player-line {
-    width: 93vw;
+    width: 100vw;
   }
   .info-block {
     display: none;
@@ -239,13 +239,18 @@
     width: 35vw;
   }
   footer {
-    margin-bottom: 60px;
+    margin-top:0;
+    margin-bottom: 90px;
   }
 }
 
 /**/
 
 @media only screen and (max-width: 640px) {
+  .track-name {
+    font-weight: 600;
+    font-size: 14px;
+  }
   .tracklist-section .track-section {
     width: 40vw;
   }
@@ -254,10 +259,10 @@
     left: 5%;
   }
   .music-icon {
-    margin: 20px;
+    margin: 10px 20px;
   }
   .show-pl:checked + #playlist-mob {
-    top: 225%;
+    //top: 225%;
     height: 70vh;
     margin-left: 0;
   }
@@ -272,18 +277,18 @@
 
   .search-block {
     form {
-
+      position: absolute;
     }
   }
   .input {
     max-width:20vw;
   }
   #find-mob {
-    top: 15px;
+    top: 0;
   }
   .search {
     margin: {
-      top: 0px;
+      top: 20px;
     };
   }
   .search:focus {
@@ -305,7 +310,7 @@
   }
 
   .mob-playlist {
-    height: 40px;
+    height: 70px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -351,11 +356,16 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+
+  .tracklist-section-block {
+    overflow: inherit;
+    width:100%;
+    height:auto;
+    display: none;
+    max-height: 100%;
+  }
   .tracklist-section .track-section {
-
-      width: 65vw;
-
-
+    width: 60vw;
   }
   .volume-block {
     .volume {
