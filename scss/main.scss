@@ -707,11 +707,23 @@ input[type=range] {
   }
 }
 .player-range-section {
+  //left: 0;
+  //right: 0;
+  //position: fixed;
+  //bottom: 5vh;
   justify-items: flex-start;
   min-height: 30px;
   max-width: 350px;
   width: 100%;
+  background: #fff;
   margin-right: 25px;
+
+}
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
 }
 .track-time {
   font-size: $font-size-default - 2;
