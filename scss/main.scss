@@ -25,7 +25,8 @@
   &:checked + #playlist {
     height:80vh;
     opacity: 1;
-    width: 35vw;
+    max-width: 25vw;
+    width: 100%;
     position: absolute;
     top: 100%;
     border-radius: 15px;
@@ -379,9 +380,9 @@ header {
   flex-wrap: nowrap;
   border-radius: 30px;
   transition: .7s all ease;
-  height: 40px;
-  justify-content: center;
-  margin: auto;
+  min-height: 40px;
+  //justify-content: center;
+  //margin: auto;
   background-color: #fff;
   &:nth-child(odd) {
     background: lighten($gray, 10%);

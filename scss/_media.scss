@@ -3,7 +3,13 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1224px) {
+  .show-pl {
+    &:checked + #playlist {
+      max-width: 27vw;
+      width: 100%;
+    }
+  }
   .show-pl:checked + #playlist {
     width: 45vw;
   }
@@ -31,8 +37,13 @@
 /**/
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-
+@media only screen and (max-width: 1024px) {
+  .show-pl {
+    &:checked + #playlist {
+      max-width: 34vw;
+      width: 100%;
+    }
+  }
 }
 
 /**/
@@ -49,7 +60,7 @@
       height: 100vh;
       width: 100%;
       opacity: 1;
-      max-width: 100vw;
+      max-width: 50vw;
       position: absolute;
       top: 100%;
       border-radius: 15px;
@@ -271,10 +282,10 @@
   .animation-block {
     width: 35vw;
   }
-  .toggle-playlist {
-    width: 35vw;
-
-  }
+  //.toggle-playlist {
+  //  width: 35vw;
+  //
+  //}
 
   .search-block {
     form {
@@ -360,7 +371,16 @@
   .search {
     margin-top: 20px;
   }
-
+  .show-pl {
+    &:checked + #playlist {
+      max-width: 90vw;
+      width: 100%;
+}
+}
+  .show-pl:checked+#playlist-mob {
+    max-width: 90vw;
+    width: 100%;
+  }
 .player-controls .playpause label {
   margin-left: 0;
 }
