@@ -159,6 +159,7 @@
   }
   .mob-playlist, .mobile-player-line {
     width: 100vw;
+    box-shadow: 0 1px 6px -1px #939393;
   }
   .info-block {
     display: none;
@@ -357,6 +358,10 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 
+
+.player-controls .playpause label {
+  margin-left: 0;
+}
   .tracklist-section-block {
     overflow: inherit;
     width:100%;
