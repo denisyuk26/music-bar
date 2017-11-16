@@ -357,7 +357,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-
+  .search {
+    margin-top: 20px;
+  }
 
 .player-controls .playpause label {
   margin-left: 0;
@@ -376,6 +378,12 @@
     .volume {
       margin-left: 15px;
     }
+  }.track-section>* {
+     margin: auto 50px;
+   }
+
+  #playlist-mob .track-section {
+    justify-content: flex-start;
   }
   .album-section {
     width: 80vw;
@@ -387,15 +395,6 @@
     height: 50px;
     width: 50px;
   }
-  //#playlist-mob {
-  //  position: absolute;
-  //  //max-width: 90vw;
-  //  width: 100%;
-  //  max-height: 90vh;
-  //  &:hover, &:focus, &:active {
-  //    height: 90vh;
-  //  }
-  //}
 
   .button, .input {
     font-size: $font-size-default - 2;
