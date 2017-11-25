@@ -1,0 +1,228 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+
+.player-fixed-down {
+  position: relative;
+  animation: show-player 1.5s 1 ease;
+  background-color: $white;
+}
+.block-track-info {
+  position: relative;
+  .current-playlist-open {
+    &:checked {
+      + .current-playlist {
+        left: 0;
+        z-index: 9999543;
+      }
+
+    }
+    &:not(checked) {
+      + .current-playlist {
+        z-index: -1;
+        left: -9999px;
+      }
+
+    }
+  }
+  .small-album-photo {
+    height: 50px;
+    border-radius: 50%;
+    max-width: 50px;
+    width: 100%;
+    margin: 10px;
+  }
+  .open {
+    font-size: $font-size-default * 2;
+  }
+  .open-current-playlist {
+    text-indent: 10px;
+  }
+  .current-playlist-open {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1vw;
+    display: block;
+    width: 60px;
+    height: 60px;
+    z-index: 955;
+    opacity: 0;
+  }
+  .current-playlist {
+    @include gradient;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    bottom: 10vh;
+    min-height: 82vh;
+    height: auto;
+    transition: .2s all ease;
+    &-body {
+      padding: 5px;
+      color: $text-color;
+      font-size:$font-size-default - 2;
+      &-section {
+        background: $white;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+      }
+      .section-nav {
+        cursor: pointer;
+        .play-nav {
+          .playlist-playpause-button {
+            color: $text-color;
+            font-size:$font-size-default + 5;
+            text-decoration: none;
+            .pause {
+              display: none;
+              color:$hover-text;
+            }
+            .play {
+              display: block;
+            }
+            &:focus {
+              .play {
+                display: none;
+              }
+              .pause {
+                display: block;
+              }
+            }
+            &:hover {
+              color: $hover-text;
+            }
+          }
+
+        }
+        .remove-track {
+          font-size:$font-size-default + 8;
+          i {
+            color: $text-color;
+          }
+          &:hover, &:focus {
+            i {
+              color: $hover-text;
+            }
+
+          }
+        }
+
+
+      }
+
+    }
+    &-info {
+      text-indent: 25px;
+      font-size:$font-size-default;
+      color:$text-color;
+      z-index:8988;
+
+    }
+  }
+}
+.player-buttons {
+  font-size: $font-size-default * 2;
+
+  a {
+    color: $text-color;
+    &:hover, &:focus {
+      color: $hover-text;
+    }
+  }
+  .player-playpause-button {
+    text-decoration: none;
+    .pause {
+      display: none;
+    }
+    .play {
+      display: block;
+    }
+    &:focus {
+      .play {
+        display: none;
+      }
+      .pause {
+        display: block;
+      }
+    }
+  }
+
+}
+.player-range-section-new {
+  .range-input {
+    span {
+      font-size: $font-size-default;
+      margin: 5px;
+    }
+    .track-time-new {
+      width: 90%;
+    }
+  }
+  .volume-input {
+    .mute, .volume-up {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      font-size:$font-size-default + 2;
+      margin: 0 5px;
+      &:hover, &:focus {
+        color: $hover-text;
+      }
+    }
+    .track-volume-new {
+      max-width:70px;
+      width:100%;
+    }
+  }
+  input[type=range] {
+    -webkit-appearance:none;
+    background: transparent;
+    &::-webkit-slider-thumb {
+      -webkit-appearance:none;
+      width: 7px;
+      height: 7px;
+      background: $hover-text;
+      cursor: pointer;
+      margin-top: -2.6px;
+    }
+    &::-moz-range-thumb {
+      @include gradient;
+      width: 10px;
+      height: 10px;
+      //border-radius: 50%;
+      cursor: pointer;
+    }
+    &::-ms-track {
+      width: 100%;
+      cursor:pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+    &::-webkit-slider-runnable-track {
+      width: 100%;
+      height:1px;
+      cursor: pointer;
+      background: #d9d9d9;
+      border-radius: 1.3px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+
+}
+
+@keyframes show-player {
+  0% {
+    bottom: -400px;
+  }
+  100% {
+    bottom: 0;
+  }
+}

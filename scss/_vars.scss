@@ -3,13 +3,20 @@ $font-light: 'Open Sans Light', sans-serif;
 $font-size-default: 14px;
 $font-size-headers: 20px;
 $icon-size: 24px;
+$white: #fff;
+$facebook: #4267b2;
+
 $gray: #d9d9d9;
 $hover-text: #bc243c;
 $text-color: #4d4d4d;
 $border-color: rgba(70,70,70,1);
+$border-default: 1px solid;
 $prime-color: linear-gradient(to bottom, rgba(188,36,60,0.59) 1%,rgba(255,26,0,0.6) 5%,rgba(181,27,29,0.66) 31%,rgba(188,36,60,0.75) 68%,rgba(188,36,60,0.81) 94%,rgba(188,36,60,0.82) 100%);
 @mixin gradient {
   background: $prime-color;
+}
+@mixin instagram-gradient {
+  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
 }
 ///end colors and bg colors;
 
