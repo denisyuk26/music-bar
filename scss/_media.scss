@@ -44,7 +44,14 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-
+  .player-buttons {
+    font-size:$font-size-default + 16;
+    .player-playpause-button {
+      i {
+        font-size:$font-size-default + 20;
+      }
+    }
+  }
  header {
    .head-content-main {
      width: 100%;
